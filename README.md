@@ -5,8 +5,8 @@
 - [X] Provide WEB system description in few sentences - its purpose, users, etc.
 - The main aim of this system is to help to schedule a proper work out. You can set your exercises by day, learn new excercises by browsing the system and follow your progress. Main users of this system is going to be people that like to spend their time at gym/outdoors and staying fit. 
 ## Entity definition
-    Exercise:
 
+   Exercise: id(number(length=10000)), category(string(length=100) OR number(length=10000)), description(string(length=100000)), date_posted(date), image, likes(number(length>0)).
 - [ ] Define the entity ("object" that will be manipulated) of WEB system
 - [ ] Entity should have a name
 - [ ] Entity should have 3 mandatory attributes:
@@ -18,6 +18,24 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
+
+   *Post like: POST /api/exercises/:id/like
+
+   400 - {error: 'invalid joke ID'}
+   Post location: GET /api/jokes/:id/location
+
+   400 - {error: 'invalid joke ID'}
+   Upload image: POST /api/jokes/:id/image
+
+   400 - {error: 'invalid joke ID'}
+   400 - {error: 'wrong image format'}
+   404 - {error: 'page not found'}
+
+   500 - {error: 'server error'}
+
+
+
+
 - [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
 - [ ] Optionally define additional API methods that WEB system is going to expose
 - [ ] API should have at least 4 methods
