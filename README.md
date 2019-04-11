@@ -2,9 +2,11 @@
 - [X] Replace "WEB system" with your system name
 
 ## Description
-- [ ] Provide WEB system description in few sentences - its purpose, users, etc.
-
+- [X] Provide WEB system description in few sentences - its purpose, users, etc.
+- The main aim of this system is to help to schedule a proper work out. You can set your exercises by day, learn new excercises by browsing the system and follow your progress. Main users of this system is going to be people that like to spend their time at gym/outdoors and staying fit. 
 ## Entity definition
+    Exercise:
+
 - [ ] Define the entity ("object" that will be manipulated) of WEB system
 - [ ] Entity should have a name
 - [ ] Entity should have 3 mandatory attributes:
