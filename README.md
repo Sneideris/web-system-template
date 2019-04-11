@@ -26,7 +26,6 @@
       400 - {error: 'invalid day ID'}
    - Get exercise image: POST /api/exercise/:id/image
       400 - {error: 'invalid joke ID'}
-      400 - {error: 'wrong image format'}
    - 404 - {error: 'page not found'}
    - 500 - {error: 'server error'}
 
@@ -50,6 +49,8 @@
 - [ ] Should return all 5xx errors in unified format. Define format using `joi` language
 
 ## UI definition
+
+   https://wireframe.cc/aev1fO
 - [ ] Define the structure of how visually the WEB system is going to look like
 - [ ] Should have at least one view defined with https://wireframe.cc (or other wireframe tool):
 - [ ] The view should have a title
