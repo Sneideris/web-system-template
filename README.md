@@ -19,9 +19,9 @@
 
 ## API definition
 
-   -Post like: POST /api/exercises/:id/like
+   - Post like: POST /api/exercises/:id/like
 
-   --400 - {error: 'invalid exercise ID'}
+   -- 400 - {error: 'invalid exercise ID'}
    Post location: GET /api/jokes/:id/location
 
    400 - {error: 'invalid joke ID'}
