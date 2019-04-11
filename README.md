@@ -18,20 +18,17 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
-
-   - Post like: POST /api/exercises/:id/like
-
-   -- 400 - {error: 'invalid exercise ID'}
-   Post location: GET /api/jokes/:id/location
-
-   400 - {error: 'invalid joke ID'}
-   Upload image: POST /api/jokes/:id/image
-
-   400 - {error: 'invalid joke ID'}
-   400 - {error: 'wrong image format'}
-   404 - {error: 'page not found'}
-
-   500 - {error: 'server error'}
+   - Get exercise: GET /api/exercise/:id/
+      400 - {error: 'invalid exercise ID'}
+   - Post like: POST /api/exercise/:id/like
+      400 - {error: 'invalid exercise ID'}
+   - Get exercises by day: GET /api/day/:id/exercise
+      400 - {error: 'invalid day ID'}
+   - Get exercise image: POST /api/exercise/:id/image
+      400 - {error: 'invalid joke ID'}
+      400 - {error: 'wrong image format'}
+   - 404 - {error: 'page not found'}
+   - 500 - {error: 'server error'}
 
 
 
