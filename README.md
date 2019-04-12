@@ -25,7 +25,7 @@
    - Get exercises by day: GET /api/day/:id/exercise
       400 - {error: 'invalid day ID'}
    - Get exercise image: POST /api/exercise/:id/image
-      400 - {error: 'invalid joke ID'}
+      400 - {error: 'invalid image ID'}
    - 404 - {error: 'page not found'}
    - 500 - {error: 'server error'}
 
